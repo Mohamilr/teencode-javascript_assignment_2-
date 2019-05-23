@@ -376,7 +376,10 @@ console.log("average age of all workers".toUpperCase());
 const averageAge = workersProfile.reduce((acc, curr) => acc + curr.age/2, 0);
 console.log(averageAge);
 
-
+//workers that are above the age of 30
+console.log("workers that are above the age of 30".toUpperCase());
+let above = workersProfile.filter(above => above.age > 30);
+console.log(above);
 
 //workers salaries doubled
 console.log("workers salaries doubled".toUpperCase());
@@ -397,29 +400,3 @@ console.log(statement(obj));
 console.log("one line function".toUpperCase());
 const info = (name, score) => `Hello ${name}, your score is ${score}`;
 console.log(info("bayo", 300));
-
-
-//workers that are above the age of 30
-// const above30 = workersProfile.filter(year => year.age).forEach(year => year.age > 30);
-function fff(dd){
-    return dd > 30;
-}
-
-function mmm(ee) {
-    if(ee > 30){
-        return true;
-    }
-}
-
-let addn = workersProfile.filter(mmm);
-console.log(addn);
-let above = workersProfile.filter(above => above.age > 30).forEach(above => console.log(above));
-// console.log(above);
-// year => year.age > 30
-
-function dds(workersProfile){
-  return workersProfile.age >=30;
-}
-
-let filt = workersProfile.filter(dds => dds > 30);
-console.log(filt);
