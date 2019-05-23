@@ -377,8 +377,8 @@ const averageAge = workersProfile.reduce((acc, curr) => acc + curr.age/2, 0);
 console.log(averageAge);
 
 //workers that are above the age of 30
-console.log("workers that are above the age of 30".toUpperCase());
-let above = workersProfile.filter(above => above.age > 30);
+console.log("workers that are above the age of 20".toUpperCase());
+let above = workersProfile.filter(above => above.age > 20);
 console.log(above);
 
 //workers salaries doubled
